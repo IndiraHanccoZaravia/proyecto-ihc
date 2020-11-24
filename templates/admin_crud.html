@@ -16,20 +16,21 @@
 </head>
 <body>
     <div class="container">
+        <br><br><br><br>
         <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
             <ul class="nav nav-tabs justify-content-end">
                 <li class="nav-item">
-                <a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">List</a>
+                <a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">Lista</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Form</a>				   	
+                <a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Añadir</a>				   	
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Musica</h4>
+                            <h4>Música</h4>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -37,7 +38,7 @@
                                     <thead class="thead-light">
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Musica</th>
+                                        <th scope="col">Música</th>
                                         <th scope="col">Artista</th>
                                         <th scope="col">Año</th>
                                         <th scope="col">Album</th>
@@ -52,7 +53,7 @@
                                         <td>2019</td>
                                         <td>ADN</td>
                                         <td>
-                                            <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+                                            <a href="#form-tab"><i class="fas fa-edit"></i></a> | <a href="{% url 'eliminar' %}"><i class="fas fa-user-times"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -62,7 +63,7 @@
                                         <td>2011</td>
                                         <td>Album 21    </td>
                                         <td>
-                                            <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+                                            <a href="#form"><i class="fas fa-edit"></i></a> | <a href="{% url 'eliminar' %}"><i class="fas fa-user-times"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -72,7 +73,7 @@
                                         <td>2019</td>
                                         <td>Proximo album de estudio</td>
                                         <td>
-                                            <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+                                            <a href="#form"><i class="fas fa-edit"></i></a> | <a href="{% url 'eliminar' %}"><i class="fas fa-user-times"></i></a>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -85,7 +86,7 @@
                 <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="form-tab">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Agregar Musica</h4>
+                            <h4>Agregar Música</h4>
                         </div>
                         <div class="card-body">
                             <form class="form" role="form" autocomplete="off">
@@ -108,7 +109,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-lg-3 col-form-label form-control-label">Album</label>
+                                    <label class="col-lg-3 col-form-label form-control-label">Álbum</label>
                                     <div class="col-lg-9">
                                         <input class="form-control" type="text">
                                     </div>

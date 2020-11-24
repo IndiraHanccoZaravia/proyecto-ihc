@@ -15,3 +15,6 @@ class login(TemplateView):
 class recover(TemplateView):
 	template_name = 'recover.html'
 
+class eliminar(TemplateView):
+	template_name = 'eliminar.html'
+

@@ -7,4 +7,5 @@ urlpatterns = [
 	path("registration", registration.as_view(), name = "registration"),
 	path("login", login.as_view(), name = "login"),
 	path("recover", recover.as_view(), name = "recover"),
+	path("eliminar", eliminar.as_view(), name = "eliminar"),
 ]
