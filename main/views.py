@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from django.views.generic import TemplateView
 # Create your views here.
 
+class admin_crud(TemplateView):
+	template_name ='admin_crud.html'
+
 class registration(TemplateView):
 	template_name = 'registration.html'
 
@@ -11,3 +14,4 @@ class login(TemplateView):
 
 class recover(TemplateView):
 	template_name = 'recover.html'
+
