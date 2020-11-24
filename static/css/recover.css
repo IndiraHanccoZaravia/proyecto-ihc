@@ -1,0 +1,75 @@
+body{
+    background-image: url('../img/fondo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  /*ajustar la imagen a la pantalla*/
+    font-family: 'Montserrat', sans-serif;
+}
+.formulario{
+    background: rgba(0,0,0,.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.568);
+    color: white;
+
+}
+.form-control{
+    background: rgba(0,0,0,.5);
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: white;
+}
+.form-control:focus{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+
+.olvide:hover{
+    
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+.olvide{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+.olvide1:hover{
+    
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+.olvide1{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 700!important;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,.5);
+}
+
+.ingresar{
+    background: #222A3F;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.568);
+    transition: 0.5s ease-in;
+
+}
+.ingresar:hover{
+    color: white;
+}
