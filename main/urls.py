@@ -8,4 +8,5 @@ urlpatterns = [
 	path("login", login.as_view(), name = "login"),
 	path("recover", recover.as_view(), name = "recover"),
 	path("eliminar", eliminar.as_view(), name = "eliminar"),
+	path("base", base.as_view(), name = "base"),
 ]

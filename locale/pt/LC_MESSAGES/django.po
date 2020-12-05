@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-04 19:23-0500\n"
+"POT-Creation-Date: 2020-12-05 17:23-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,6 +83,22 @@ msgstr "Cancelar"
 msgid "Guardar"
 msgstr "Salve"
 
+#: .\templates\base.html:33 .\templates\login.html:16
+msgid "Iniciar Sesión"
+msgstr "Iniciar sessão"
+
+#: .\templates\base.html:36 .\templates\recover.html:15
+msgid "Recuperar"
+msgstr "Recuperar"
+
+#: .\templates\base.html:39
+msgid "Registrarme"
+msgstr "Check-in"
+
+#: .\templates\base.html:42
+msgid "Administrar CRUD"
+msgstr "Gerenciar CRUD"
+
 #: .\templates\eliminar.html:18 .\templates\eliminar.html:31
 msgid "Eliminar"
 msgstr "Remover"
@@ -94,10 +110,6 @@ msgstr "¿Tem certeza de que deseja excluir o registro?"
 #: .\templates\eliminar.html:30
 msgid "Esta operacion es irreversible"
 msgstr "Esta operação é irreversível"
-
-#: .\templates\login.html:16
-msgid "Iniciar Sesión"
-msgstr "Iniciar sessão"
 
 #: .\templates\login.html:24 .\templates\registration.html:43
 msgid "INICIAR SESIÓN"
@@ -122,10 +134,6 @@ msgstr "¿Você esqueceu sua senha?"
 #: .\templates\login.html:40 .\templates\registration.html:40
 msgid "Registrarse"
 msgstr "Check-in"
-
-#: .\templates\recover.html:15
-msgid "Recuperar"
-msgstr "Recuperar"
 
 #: .\templates\recover.html:24
 msgid "RECUPERAR CUENTA"
