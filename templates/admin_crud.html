@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,30 +8,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
-    <link rel="stylesheet" href="{% static 'css/admin_crud.css' %}">
+    <link rel="stylesheet" href="{% static 'css/user-form.css' %}">
     <!-- Los iconos tipo Solid de Fontawesome-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <title>admin_crud</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>{% trans 'crud' %}</title>
 </head>
 <body>
     <div class="container">
-        <br><br><br><br>
         <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
             <ul class="nav nav-tabs justify-content-end">
                 <li class="nav-item">
-                <a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">Lista</a>
+                <a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">{% trans 'Lista' %}</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Añadir</a>				   	
+                <a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">{% trans 'Añadir' %}</a>				   	
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Música</h4>
+                            <h4>{% trans 'Música' %}</h4>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -38,11 +41,11 @@
                                     <thead class="thead-light">
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Música</th>
-                                        <th scope="col">Artista</th>
-                                        <th scope="col">Año</th>
-                                        <th scope="col">Album</th>
-                                        <th>Acciones</th>
+                                        <th scope="col">{% trans 'Música' %}</th>
+                                        <th scope="col">{% trans 'Artista' %}</th>
+                                        <th scope="col">{% trans 'Año' %}</th>
+                                        <th scope="col">{% trans 'Álbum' %}</th>
+                                        <th>{% trans 'Acciones' %}</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -61,7 +64,7 @@
                                         <td>Set Fire to the rain</td>
                                         <td>Adele</td>
                                         <td>2011</td>
-                                        <td>Album 21    </td>
+                                        <td>{% trans 'Álbum 21' %}</td>
                                         <td>
                                             <a href="#form"><i class="fas fa-edit"></i></a> | <a href="{% url 'eliminar' %}"><i class="fas fa-user-times"></i></a>
                                         </td>
@@ -71,7 +74,7 @@
                                         <td>Memories</td>
                                         <td>Maroon 5</td>
                                         <td>2019</td>
-                                        <td>Proximo album de estudio</td>
+                                        <td>{% trans 'Próximo álbum de estudio' %}</td>
                                         <td>
                                             <a href="#form"><i class="fas fa-edit"></i></a> | <a href="{% url 'eliminar' %}"><i class="fas fa-user-times"></i></a>
                                         </td>
@@ -86,39 +89,39 @@
                 <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="form-tab">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Agregar Música</h4>
+                            <h5>{% trans 'Agregar Música' %}</h5>
                         </div>
                         <div class="card-body">
                             <form class="form" role="form" autocomplete="off">
                                 <div class="form-group row">
-                                    <label class="col-lg-3 col-form-label form-control-label">Música</label>
+                                    <label class="col-lg-3 col-form-label form-control-label">{% trans 'Música' %}</label>
                                     <div class="col-lg-9">
                                         <input class="form-control" type="text" >
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-lg-3 col-form-label form-control-label">Artista</label>
+                                    <label class="col-lg-3 col-form-label form-control-label">{% trans 'Artista' %}</label>
                                     <div class="col-lg-9">
                                         <input class="form-control" type="text" >
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-lg-3 col-form-label form-control-label">Año</label>
+                                    <label class="col-lg-3 col-form-label form-control-label">{% trans 'Año' %}</label>
                                     <div class="col-lg-9">
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-lg-3 col-form-label form-control-label">Álbum</label>
+                                    <label class="col-lg-3 col-form-label form-control-label">{% trans 'Álbum' %}</label>
                                     <div class="col-lg-9">
                                         <input class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-lg-12 text-center">
-                                        <input type="reset" class="btn btn-secondary" value="Cancelar">
+                                        <input type="reset" class="btn btn-secondary" value="{% trans 'Cancelar' %}">
                                         <input type="button" class="btn btn-primary"
-                                            value="Guardar">
+                                            value="{% trans 'Guardar' %}">
                                     </div>
                                 </div>
                             </form>
@@ -128,6 +131,39 @@
             </div>
         </div>
     </div>
+
+
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+    <div class="container">
+        <div class="fixed-action-btn vertical">
+
+            <form action="{% url 'set_language' %}" method="post" id="myform">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{redirect_to}}" >
+
+            <a class="btn-floating btn-large teal">
+            <i class="large material-icons">language</i>
+            </a>
+            <ul>
+                {% for language in languages %}
+                    <li><button class="btn transparent tam" type="submit" value="{{language.code}}" name="language">
+                        {% if language.code == 'pt' %}
+                        <span class="iconify" data-icon="twemoji:flag-for-flag-brazil" data-inline="false" data-height="40"></span></span>
+                        {% elif language.code == 'en' %}
+                        <span class="iconify" data-icon="emojione-v1:flag-for-united-kingdom" data-inline="false" data-height="40"></span>
+                        {% else %}
+                        <span class="iconify" data-icon="emojione-v1:flag-for-spain" data-inline="false" data-height="40"></span>
+                        {% endif %}
+                    </button></li>
+                {% endfor %}
+            </ul>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

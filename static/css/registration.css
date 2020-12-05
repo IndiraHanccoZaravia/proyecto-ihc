@@ -64,3 +64,10 @@ body {
 	text-decoration-line: none;
 	cursor: pointer;
 }
+
+.tam {
+	width: 6% !important;
+	margin: 0 auto;
+	padding-left: 2% !important;
+	text-align: left;
+}

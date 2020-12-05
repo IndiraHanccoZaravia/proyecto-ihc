@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-04 19:23-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\project\settings.py:122
+msgid "Español"
+msgstr "Spanish"
+
+#: .\project\settings.py:123
+msgid "Inglés"
+msgstr "English"
+
+#: .\project\settings.py:124
+msgid "Portugués"
+msgstr "Portuguese"
+
+#: .\templates\admin_crud.html:19
+msgid "crud"
+msgstr "crud"
+
+#: .\templates\admin_crud.html:26
+msgid "Lista"
+msgstr "List"
+
+#: .\templates\admin_crud.html:29
+msgid "Añadir"
+msgstr "Add"
+
+#: .\templates\admin_crud.html:36 .\templates\admin_crud.html:44
+#: .\templates\admin_crud.html:97
+msgid "Música"
+msgstr "Music"
+
+#: .\templates\admin_crud.html:45 .\templates\admin_crud.html:103
+msgid "Artista"
+msgstr "Artist"
+
+#: .\templates\admin_crud.html:46 .\templates\admin_crud.html:109
+msgid "Año"
+msgstr "Year"
+
+#: .\templates\admin_crud.html:47 .\templates\admin_crud.html:115
+msgid "Álbum"
+msgstr "Album"
+
+#: .\templates\admin_crud.html:48
+msgid "Acciones"
+msgstr "Actions"
+
+#: .\templates\admin_crud.html:67
+msgid "Álbum 21"
+msgstr "Album 21"
+
+#: .\templates\admin_crud.html:77
+msgid "Próximo álbum de estudio"
+msgstr "Next studio album"
+
+#: .\templates\admin_crud.html:92
+msgid "Agregar Música"
+msgstr "Add Music"
+
+#: .\templates\admin_crud.html:122 .\templates\eliminar.html:32
+msgid "Cancelar"
+msgstr "Cancel"
+
+#: .\templates\admin_crud.html:124
+msgid "Guardar"
+msgstr "Save"
+
+#: .\templates\eliminar.html:18 .\templates\eliminar.html:31
+msgid "Eliminar"
+msgstr "Delete"
+
+#: .\templates\eliminar.html:29
+msgid "¿ Está seguro que desea eliminar el registro ?"
+msgstr ""
+
+#: .\templates\eliminar.html:30
+msgid "Esta operacion es irreversible"
+msgstr "This operation is irreversible"
+
+#: .\templates\login.html:16
+msgid "Iniciar Sesión"
+msgstr "Login"
+
+#: .\templates\login.html:24 .\templates\registration.html:43
+msgid "INICIAR SESIÓN"
+msgstr "LOGIN"
+
+#: .\templates\login.html:27 .\templates\recover.html:27
+msgid "Ingrese su usuario"
+msgstr "Enter your username"
+
+#: .\templates\login.html:30
+msgid "Ingrese su contraseña"
+msgstr "Enter your password"
+
+#: .\templates\login.html:33
+msgid "Acceder"
+msgstr "Log in"
+
+#: .\templates\login.html:37
+msgid "¿Olvidaste tu contraseña?"
+msgstr "¿Did you forget your password?"
+
+#: .\templates\login.html:40 .\templates\registration.html:40
+msgid "Registrarse"
+msgstr "Register"
+
+#: .\templates\recover.html:15
+msgid "Recuperar"
+msgstr "Recover"
+
+#: .\templates\recover.html:24
+msgid "RECUPERAR CUENTA"
+msgstr "RECOVER ACCOUNT"
+
+#: .\templates\recover.html:30
+msgid "Ingrese su correo"
+msgstr "Enter your email"
+
+#: .\templates\recover.html:33 .\templates\recover.html:36
+msgid "Ingrese nueva contraseña"
+msgstr "Enter new password"
+
+#: .\templates\recover.html:39
+msgid "Cambiar"
+msgstr "Change"
+
+#: .\templates\registration.html:19
+#, fuzzy
+#| msgid "Registrarse"
+msgid "Registro"
+msgstr "Register"
+
+#: .\templates\registration.html:28
+msgid "REGISTRO"
+msgstr "REGISTRATION"
+
+#: .\templates\registration.html:31
+msgid "Nombre de Usuario"
+msgstr "Username"
+
+#: .\templates\registration.html:34
+msgid "Correo Electrónico"
+msgstr "Email"
+
+#: .\templates\registration.html:37
+msgid "Contraseña"
+msgstr "Password"

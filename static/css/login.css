@@ -74,3 +74,10 @@ body{
 .ingresar:hover{
     color: white;
 }
+
+.tam {
+    width: 6% !important;
+    margin: 0 auto;
+    padding-left: 2% !important;
+    text-align: left;
+}

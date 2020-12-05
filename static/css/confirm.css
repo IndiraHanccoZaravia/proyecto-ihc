@@ -1,4 +1,8 @@
 /* tema del cuadro */
+body{
+    background: url('../img/fondo.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
 
 .dialog-card{
     box-sizing: border-box;
@@ -66,4 +70,11 @@
 .dialog-card .dialog-reject-button{
     background-color:  #e4749e;
     font-size: 20px;
+}
+
+.tam {
+    width: 6% !important;
+    margin: 0 auto;
+    padding-left: 2% !important;
+    text-align: left;
 }
