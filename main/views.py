@@ -26,3 +26,6 @@ class eliminar(TemplateView):
 
 class grafico(TemplateView):
 	template_name = 'grafico.html'
+
+class segundoGrafico(TemplateView):
+	template_name = 'segundoGrafico.html'
