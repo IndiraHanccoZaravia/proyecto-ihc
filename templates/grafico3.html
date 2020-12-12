@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    <script src="{% static 'lib/highcharts/highcharts.js' %}"></script>
+    <script src="{% static 'lib/highcharts/highcharts-more.js' %}"></script>
+    <script src="{% static 'lib/highcharts/modules/exporting.js' %}"></script>
+    <script src="{% static 'lib/highcharts/modules/export-data.js' %}"></script>
+    <script src="{% static 'lib/highcharts/modules/accessibility.js' %}"></script>
+    <title>{% trans 'Gráfico' %}</title>
+    <style>
+    .center{
+        float: none;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-8 center">
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+            </figure>
+        </div>
+    </div>
+    
+    <script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'columnpyramid'
+        },
+        title: {
+            text: 'Las canciones más escuchadas'
+        },
+        colors: ['#94DF88', '#94DF88', '#94DF88', '#94DF88', '#94DF88'],
+        xAxis: {
+            crosshair: true,
+            labels: {
+                style: {
+                    fontSize: '14px'
+                }
+            },
+            type: 'category'
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Nro de Reproducciones'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' m'
+        },
+        series: [{
+            name: 'Height',
+            colorByPoint: true,
+            data: [
+                ['Shape of You - Ed Sheeran', 138.8],
+                ['One Dance - Drake', 110.4],
+                ['Lean On - Major Lazer', 99],
+                ['Happy - Pharrell Williams', 80.1],
+                ['Memories - Maroon 5', 50]
+            ],
+            showInLegend: false
+        }]
+    });
+    </script>
+{% endblock %}
+

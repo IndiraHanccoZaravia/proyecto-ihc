@@ -3,8 +3,10 @@ from main.views import *
 from . import views
 
 urlpatterns = [
-	path("grafico1", estadistica.as_view(), name = "grafico1"),
-	path("grafico2", grafico.as_view(), name = "grafico2"),
+	path("grafico1", grafico1.as_view(), name = "grafico1"),
+	path("grafico2", grafico2.as_view(), name = "grafico2"),
+	path("grafico3", grafico3.as_view(), name = "grafico3"),
+
 	path("admin_crud", admin_crud.as_view(),name="admin_crud"),
 	path("registration", registration.as_view(), name = "registration"),
 	path("login", login.as_view(), name = "login"),

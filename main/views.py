@@ -9,6 +9,12 @@ class admin_crud(TemplateView):
 class grafico1(TemplateView):
 	template_name ='grafico1.html'
 
+class grafico2(TemplateView):
+	template_name = 'grafico2.html'
+
+class grafico3(TemplateView):
+	template_name = 'grafico3.html'
+
 class base(TemplateView):
 	template_name ='base.html'
 
@@ -24,5 +30,5 @@ class recover(TemplateView):
 class eliminar(TemplateView):
 	template_name = 'eliminar.html'
 
-class grafico2(TemplateView):
-	template_name = 'grafico2.html'
+
+
