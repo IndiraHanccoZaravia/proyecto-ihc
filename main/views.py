@@ -24,3 +24,5 @@ class recover(TemplateView):
 class eliminar(TemplateView):
 	template_name = 'eliminar.html'
 
+class grafico(TemplateView):
+	template_name = 'grafico.html'

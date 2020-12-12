@@ -8,10 +8,18 @@
 <script src="{% static 'lib/highcharts/modules/export-data.js' %}"></script>
 <script src="{% static 'lib/highcharts/modules/accessibility.js' %}"></script> 
 <title>{% trans 'estadistica' %}</title>
+<style>
+    .center{
+        float: none;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
 {% endblock %}
 
 {% block content %}
-   <div class="container-fluid">
+   <div class="container-fluid center">
         <div class="row">
             <div class="col-lg-12">
                 <div id="container">
