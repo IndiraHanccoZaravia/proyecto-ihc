@@ -8,5 +8,6 @@ urlpatterns = [
 	path("login", login.as_view(), name = "login"),
 	path("recover", recover.as_view(), name = "recover"),
 	path("eliminar", eliminar.as_view(), name = "eliminar"),
+	path("estadistica", estadistica.as_view(), name = "estadistica"),
 	path("", base.as_view(), name = "base"),
 ]

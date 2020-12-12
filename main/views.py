@@ -6,6 +6,9 @@ from django.views.generic import TemplateView
 class admin_crud(TemplateView):
 	template_name ='admin_crud.html'
 
+class estadistica(TemplateView):
+	template_name ='estadistica.html'
+
 class base(TemplateView):
 	template_name ='base.html'
 
