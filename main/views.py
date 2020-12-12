@@ -15,6 +15,12 @@ class grafico2(TemplateView):
 class grafico3(TemplateView):
 	template_name = 'grafico3.html'
 
+class grafico4(TemplateView):
+	template_name = 'grafico4.html'
+
+class grafico5(TemplateView):
+	template_name = 'grafico5.html'
+
 class base(TemplateView):
 	template_name ='base.html'
 

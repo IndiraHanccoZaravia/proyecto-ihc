@@ -6,6 +6,8 @@ urlpatterns = [
 	path("grafico1", grafico1.as_view(), name = "grafico1"),
 	path("grafico2", grafico2.as_view(), name = "grafico2"),
 	path("grafico3", grafico3.as_view(), name = "grafico3"),
+	path("grafico4", grafico4.as_view(), name = "grafico4"),
+	path("grafico5", grafico5.as_view(), name = "grafico5"),
 
 	path("admin_crud", admin_crud.as_view(),name="admin_crud"),
 	path("registration", registration.as_view(), name = "registration"),
