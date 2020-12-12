@@ -14,50 +14,49 @@
    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <div id="container">
+                <div id="musicporanio">
                 </div>
             </div>
         </div>
     </div>
     
     <script type="application/javascript">
-        Highcharts.chart('container', {
+        Highcharts.chart('musicporanio', {
     chart: {
         type: 'column'
     },
     title: {
-        text: 'Monthly Average Rainfall'
+        text: 'Cantidad de musica descargada en el Año'
     },
     subtitle: {
-        text: 'Source: WorldClimate.com'
+        text: 'Grafico que muestra el total de descargas ocurridas en cada mes durante el año'
     },
     xAxis: {
         categories: [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
+            'enero',
+            'febrero',
+            'marzo',
+            'abril',
+            'mayo',
+            'junio',
+            'julio',
+            'agosto',
+            'setiembre',
+            'noviembre',
+            'diciembre'
         ],
         crosshair: true
     },
     yAxis: {
         min: 0,
         title: {
-            text: 'Rainfall (mm)'
+            text: 'Total descargas (canciones)'
         }
     },
     tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            '<td style="padding:0"><b>{point.y:.1f} canciones</b></td></tr>',
         footerFormat: '</table>',
         shared: true,
         useHTML: true
@@ -69,20 +68,20 @@
         }
     },
     series: [{
-        name: 'Tokyo',
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+        name: 'Baladas',
+        data: [50, 120, 25, 65, 34, 15, 23, 54, 54, 65, 95, 84]
 
     }, {
-        name: 'New York',
-        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+        name: 'Pop',
+        data: [83, 78, 98, 93, 106, 84, 105, 104, 91, 83, 106, 92]
 
     }, {
-        name: 'London',
-        data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+        name: 'Rock',
+        data: [48, 38, 39, 41, 47, 48, 59, 59, 52, 65, 59, 51]
 
     }, {
-        name: 'Berlin',
-        data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+        name: 'Regueton',
+        data: [42, 33, 34, 39, 52, 75, 57, 60, 47, 39, 46, 51]
 
     }]
 });
