@@ -6,8 +6,8 @@ from django.views.generic import TemplateView
 class admin_crud(TemplateView):
 	template_name ='admin_crud.html'
 
-class estadistica(TemplateView):
-	template_name ='estadistica.html'
+class grafico1(TemplateView):
+	template_name ='grafico1.html'
 
 class base(TemplateView):
 	template_name ='base.html'
@@ -24,5 +24,5 @@ class recover(TemplateView):
 class eliminar(TemplateView):
 	template_name = 'eliminar.html'
 
-class grafico(TemplateView):
-	template_name = 'grafico.html'
+class grafico2(TemplateView):
+	template_name = 'grafico2.html'
