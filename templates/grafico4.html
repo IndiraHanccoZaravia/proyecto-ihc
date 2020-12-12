@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+    <script src="{% static 'lib/highcharts/highcharts.js' %}"></script>
+    <script src="{% static 'lib/highcharts/highcharts-more.js' %}"></script>
+    <script src="{% static 'lib/highcharts/modules/exporting.js' %}"></script>
+    <script src="{% static 'lib/highcharts/modules/export-data.js' %}"></script>
+    <script src="{% static 'lib/highcharts/modules/accessibility.js' %}"></script>
+    <title>{% trans 'Gráfico' %}</title>
+    <style>
+    .center{
+        float: none;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #container {
+      min-width: 310px;
+      max-width: 800px;
+      height: 400px;
+      margin: 0 auto
+    }
+    </style>
+{% endblock %}
+{% block content %}
+</div>
+    <div class="row">
+        <div class="col-md-8 center">
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+            </figure>
+        </div>
+    </div>
+    
+    <script>
+    Highcharts.chart('container', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'Géneros<br>más<br>escuchados',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 60
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%'],
+                size: '110%'
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Porcentaje de personas',
+            innerSize: '50%',
+            data: [
+                ['Pop', 58.9],
+                ['Rock', 13.29],
+                ['Kpop', 13],
+                ['Baladas', 3.78],
+                ['Reguetón', 3.42],
+                {
+                    name: 'Other',
+                    y: 7.61,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            ]
+        }]
+    });
+
+    </script>
+{% endblock %}
+
