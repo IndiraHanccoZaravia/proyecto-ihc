@@ -9,6 +9,8 @@ urlpatterns = [
 	path("grafico4", grafico4.as_view(), name = "grafico4"),
 	path("grafico5", grafico5.as_view(), name = "grafico5"),
 
+	path("mapa",  mapaSitio.as_view(), name = "mapa"),	
+
 	path("admin_crud", admin_crud.as_view(),name="admin_crud"),
 	path("registration", registration.as_view(), name = "registration"),
 	path("login", login.as_view(), name = "login"),

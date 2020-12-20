@@ -36,5 +36,5 @@ class recover(TemplateView):
 class eliminar(TemplateView):
 	template_name = 'eliminar.html'
 
-
-
+class mapaSitio(TemplateView):
+	template_name = 'mapa.html'
