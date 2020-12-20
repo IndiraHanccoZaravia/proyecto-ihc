@@ -2,15 +2,43 @@
 {% load static %}
 {% load i18n %}
 {% block title %}
-    <title>{% trans 'Mapa del Sitio' %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mapa.css' %}">
+    <title>
+        {% trans 'Mapa del Sitio' %}
+    </title>
 {% endblock %}
 {% block content %}
-<br>
-    <div class="container">
-        <img src="{% static 'img/mapa.png' %}" style="margin-left: 100px" >
-            
-        </style>>
+    <div class="cuerpo">
+    <div class="container mapa">
+        <h4>Mapa del Sitio</h4>
+        <ul id="myUL">
+            <li><a href="{% url 'login' %}" class="pb-3"> 1. Iniciar Sesión</a></li>
+            <li><a href="{% url 'recover' %}" class="pb-3"> 2. Recuperar cuenta</a></li>
+            <li><a href="{% url 'registration' %}" class="pb-3"> 3. Registro</a></li>
+            <li><a href="{% url 'login' %}" class="pb-3"> 4. Administrar CRUD</a></li>
+          <li><span class="caret"><a href="#"> 5. Gráficos estadísticos</a></span>
+            <ul class="nested">
+              <li><a href="{% url 'grafico1' %}" class="p-5"> 5. 1. Cantidad de música descargada en el año</a></li> 
+              <li><a href="{% url 'grafico2' %}" class="p-5"> 5. 2. Visitas por edad y género</a></li> 
+              <li><a href="{% url 'grafico3' %}" class="p-5"> 5. 3. Canciones más escuchadas</a></li> 
+              <li><a href="{% url 'grafico4' %}" class="p-5"> 5. 4. Géneros de música mas escuchados</a></li> 
+              <li><a href="{% url 'grafico5' %}" class="p-5"> 5. 5. Canciones exitosas por año</a></li> 
+            </ul>
+          </li>
+        </ul>
     </div>
+    </div>
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
 {% endblock %}
 
 
